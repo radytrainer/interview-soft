@@ -83,6 +83,76 @@ const QUESTION_BANK = {
       "question": "How do you communicate a problem when something goes wrong?",
       "answer": "I explain the issue honestly, include the important facts, and suggest the next step instead of only reporting bad news. Good communication during a problem should be calm, clear, and solution-focused.",
       "example": "If my team cannot finish our part of a project on time, I inform the lecturer early, explain the blocker, and propose a revised plan."
+    },
+    {
+      "id": "f6",
+      "difficulty": "Basic",
+      "question": "How do you explain a technical problem to someone who has no background in technology?",
+      "answer": "I use everyday analogies, avoid technical jargon, and focus on how the problem affects them directly. I check in frequently to ensure the explanation makes sense to them.",
+      "example": "If a server is down, I might explain it as a highway block where traffic (data) can't get through to the destination."
+    },
+    {
+      "id": "f7",
+      "difficulty": "Intermediate",
+      "question": "What is your greatest communication weakness, and how are you actively working to improve it?",
+      "answer": "My weakness is sometimes over-explaining technical details instead of getting straight to the point. I am improving by structuring my responses using the \"Executive Summary\" approach—giving the bottom line first.",
+      "example": "When reporting a bug, I now state the impact first, followed by the technical logs only if requested."
+    },
+    {
+      "id": "f8",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a situation where someone gives you highly vague or confusing instructions?",
+      "answer": "I avoid guessing or assuming. I ask clarifying questions, restate my understanding of the request to them for validation, and ask for a concrete example of the expected output.",
+      "example": "When asked to \"make the page look better,\" I ask if they mean improving loading speed, restructuring the layout, or updating the color scheme."
+    },
+    {
+      "id": "f9",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a communication breakdown or misunderstanding with a colleague?",
+      "answer": "I address it immediately and directly, preferably over a voice call or face-to-face rather than text. I focus on clarifying my intent, listening to their perspective, and finding alignment.",
+      "example": "When a text message was taken as rude, I called my teammate to clarify that I was just writing quickly during a deployment and apologized for the tone."
+    },
+    {
+      "id": "f10",
+      "difficulty": "Advanced",
+      "question": "How do you communicate a major delay or project failure to a strict stakeholder?",
+      "answer": "I communicate early, provide clear reasons for the delay without making excuses, and present a revised timeline along with concrete recovery options.",
+      "example": "Telling a client that a database migration failed, explaining the rollback plan, and showing how we will prevent it on the next attempt."
+    },
+    {
+      "id": "f11",
+      "difficulty": "Intermediate",
+      "question": "How do you handle an interviewer or colleague who communicates in a very quiet, distant, or passive-aggressive manner?",
+      "answer": "I stay professional, polite, and focused entirely on the facts. I do not take their behavior personally and try to keep my tone warm and open to build a bridge.",
+      "example": "If a colleague responds with short, cold emails, I make an effort to have a quick, friendly video call to build rapport."
+    },
+    {
+      "id": "f12",
+      "difficulty": "Intermediate",
+      "question": "What do you do when you realize your written message was completely misunderstood by a client?",
+      "answer": "I immediately follow up with a clear, simplified summary. If possible, I suggest a quick call to clear up the confusion, acknowledging that text can sometimes lack context.",
+      "example": "If a client thinks a feature is cancelled when it is only delayed, I send a revised roadmap chart showing the new delivery slot."
+    },
+    {
+      "id": "f13",
+      "difficulty": "Basic",
+      "question": "How do you ask for help without sounding like you didn't try to solve the problem yourself?",
+      "answer": "I explain what I am trying to achieve, list the specific steps I have already taken, and point to where I got stuck. This shows I did the research.",
+      "example": "Saying: \"I'm trying to connect to the API. I verified the key and tested it in Postman, but the react code returns a CORS error. Do you have a moment to look?\""
+    },
+    {
+      "id": "f14",
+      "difficulty": "Advanced",
+      "question": "How do you handle a situation where you have to give negative feedback to someone who is highly sensitive?",
+      "answer": "I use the \"feedback sandwich\" or focus entirely on the behavior/work rather than the person. I highlight their strengths first, explain the issue constructively, and offer to brainstorm solutions together.",
+      "example": "\"Your research is excellent, but the formatting of the slides makes it hard to read. Let's simplify the template together to make your work shine.\""
+    },
+    {
+      "id": "f15",
+      "difficulty": "Advanced",
+      "question": "How do you communicate when you have to explain a strange or highly counter-intuitive decision made by management?",
+      "answer": "I focus on the business context and the \"why\" behind the decision. Even if I disagree, I present the rationale objectively to keep the team aligned and positive.",
+      "example": "Explaining why a popular but high-maintenance feature was removed to focus resources on core system stability."
     }
   ],
   "problem_solving": [
@@ -120,6 +190,76 @@ const QUESTION_BANK = {
       "question": "How do you help solve a problem in a team when people have different ideas?",
       "answer": "I listen to each viewpoint, look for the main goal we all share, and suggest a fair way to compare the ideas. Good problem solving in a team means balancing logic, respect, and cooperation.",
       "example": "If teammates disagree about how to divide work, I suggest listing tasks, deadlines, and strengths so we can make a practical decision together."
+    },
+    {
+      "id": "ps6",
+      "difficulty": "Intermediate",
+      "question": "How do you approach a bug that occurs only sporadically and is extremely hard to reproduce?",
+      "answer": "I collect logs, identify patterns (like time of day, user input, or system load), set up detailed telemetry, and isolate variables until I find the trigger.",
+      "example": "If a database connection drops randomly, I write a script to monitor network latency and database connection pool usage over 24 hours."
+    },
+    {
+      "id": "ps7",
+      "difficulty": "Intermediate",
+      "question": "What is your biggest weakness when solving complex problems, and how do you handle it?",
+      "answer": "My weakness is falling down \"rabbit holes\" trying to fix minor details instead of focusing on the core issue. I manage this by setting a timer and reviewing my progress every 30 minutes.",
+      "example": "If I spend too long trying to optimize a single query, I pause to ask if a simpler database index would solve the problem first."
+    },
+    {
+      "id": "ps8",
+      "difficulty": "Advanced",
+      "question": "How do you solve a problem when you have absolutely no internet access or documentation available?",
+      "answer": "I work with what is available: I experiment locally, inspect error messages, search local offline resources, write small tests, and rely on fundamental coding patterns.",
+      "example": "Using terminal help commands (like `--help` or `man`) and inspecting code autocomplete or source files to figure out an API structure offline."
+    },
+    {
+      "id": "ps9",
+      "difficulty": "Advanced",
+      "question": "How do you solve a problem where the client's requested solution is highly strange, inefficient, or counterproductive?",
+      "answer": "I seek to understand the root goal they want to achieve. Then, I explain the risks of their proposed approach and present a much better, standard alternative.",
+      "example": "If a client wants all database records loaded on a single page, I explain the lag risk and propose infinite scroll or pagination instead."
+    },
+    {
+      "id": "ps10",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a situation where you realize your own technical weakness is the main blocker to solving a critical problem?",
+      "answer": "I admit the gap early, seek mentorship or advice from a senior colleague, and spend dedicated time learning the specific concept required to unblock the task.",
+      "example": "When I didn't know how to write complex SQL joins, I asked a senior developer for a 15-minute explanation and read documentation before continuing."
+    },
+    {
+      "id": "ps11",
+      "difficulty": "Basic",
+      "question": "How do you break down a massive, overwhelming technical task into manageable pieces?",
+      "answer": "I identify the final output, list the core dependencies, and create a step-by-step checklist, focusing on building a functional MVP (Minimum Viable Product) first.",
+      "example": "If building a full e-commerce backend, I start with a simple endpoint that returns a list of hardcoded products before connecting database or payment systems."
+    },
+    {
+      "id": "ps12",
+      "difficulty": "Intermediate",
+      "question": "How do you troubleshoot a strange anomaly where code works perfectly on your machine but fails in production?",
+      "answer": "I compare environment configurations, check differences in database state, verify permissions, inspect environment variables, and review the production logs.",
+      "example": "Checking if the production server uses a different timezone or node version that changes date parsing behavior."
+    },
+    {
+      "id": "ps13",
+      "difficulty": "Intermediate",
+      "question": "Describe a time you had to solve a problem with incomplete or contradictory data.",
+      "answer": "I list the assumptions I am making, identify the risks of those assumptions, verify what I can, and design the solution to be flexible enough to handle changes later.",
+      "example": "Building a form layout before the API schema is finalized by using mock JSON data that can be easily mapped to the real endpoint later."
+    },
+    {
+      "id": "ps14",
+      "difficulty": "Advanced",
+      "question": "How do you solve a bug that was caused by a strange, undocumented quirk in a third-party library?",
+      "answer": "I research GitHub issues, look for alternative implementations, write a minimal reproduction script, and if necessary, write a clean wrapper or patch to bypass the library's bug.",
+      "example": "Finding that a library fails on empty arrays, so I add a check to bypass the library call if the array length is zero."
+    },
+    {
+      "id": "ps15",
+      "difficulty": "Advanced",
+      "question": "What do you do when two senior developers suggest completely opposite and conflicting solutions to a problem?",
+      "answer": "I write down the pros and cons of both approaches regarding performance, maintenance, and development speed. I present this objective comparison to them to help reach a consensus.",
+      "example": "Presenting a comparison of REST vs GraphQL for a new microservice, helping the senior developers agree on REST for its simplicity in our specific project."
     }
   ],
   "debugging": [
@@ -157,6 +297,76 @@ const QUESTION_BANK = {
       "question": "How can critical thinking improve teamwork?",
       "answer": "It helps people discuss ideas more fairly, notice risks early, and make better group decisions. Critical thinking improves teamwork because it combines analysis with open-minded discussion.",
       "example": "When a team selects a project topic, I compare the options using time, difficulty, and available research instead of choosing only the most popular idea."
+    },
+    {
+      "id": "db6",
+      "difficulty": "Intermediate",
+      "question": "How do you identify weaknesses in your own ideas or code designs before presenting them?",
+      "answer": "I play devil's advocate: I try to break my design, look for edge cases, consider scaling limitations, and ask myself what a senior reviewer would criticize.",
+      "example": "Before suggesting a state library, I ask if context API is sufficient, avoiding unnecessary bundle size and complexity."
+    },
+    {
+      "id": "db7",
+      "difficulty": "Advanced",
+      "question": "How do you investigate a strange anomaly that everyone else dismisses as a \"fluke\" or \"random glitch\"?",
+      "answer": "I treat every glitch as a real bug waiting to happen. I look at system logs, check resource limits, review git commits around the time it happened, and try to isolate the exact sequence of events.",
+      "example": "Investigating a memory leak that happens only when a user uploads a specifically malformed 50MB file."
+    },
+    {
+      "id": "db8",
+      "difficulty": "Intermediate",
+      "question": "How do you identify and mitigate your own cognitive biases when making technical decisions?",
+      "answer": "I avoid \"shiny object syndrome\" (using tools just because they are new). I base decisions on project requirements, team skills, and benchmark data rather than personal preference.",
+      "example": "Resisting the urge to rewrite a stable codebase in Rust just because it is trendy, when the current Node.js setup is performing perfectly."
+    },
+    {
+      "id": "db9",
+      "difficulty": "Advanced",
+      "question": "How do you handle a situation where a widely-accepted best practice actually harms your specific project?",
+      "answer": "I analyze the custom constraints of my project, collect performance metrics, and document why deviating from the \"best practice\" is the optimal path in this specific scenario.",
+      "example": "Bypassing an ORM for direct raw SQL queries in a reporting tool because the ORM generated extremely slow and nested joins."
+    },
+    {
+      "id": "db10",
+      "difficulty": "Intermediate",
+      "question": "What do you do when a bug report comes from a client, but you cannot find any error logs or stack traces?",
+      "answer": "I ask the client for the exact steps, screenshots, or network logs. I try to match their browser environment and check if the error is failing silently on the client-side.",
+      "example": "Using browser DevTools simulation to reproduce a layout crash that only happens on Safari on iOS devices."
+    },
+    {
+      "id": "db11",
+      "difficulty": "Basic",
+      "question": "How do you differentiate between a symptom of a problem and its actual root cause?",
+      "answer": "I use the \"5 Whys\" technique. I trace the error upstream, questioning why each step failed, rather than just writing code to patch the visible error.",
+      "example": "Instead of writing a script to restart a crashed server every hour, I find the underlying memory leak that was causing the crash."
+    },
+    {
+      "id": "db12",
+      "difficulty": "Intermediate",
+      "question": "How do you evaluate the reliability of a new open-source package before adding it to your project?",
+      "answer": "I check the library's updates, open issue count, commit history, download volume, and documentation completeness to ensure it is actively maintained and secure.",
+      "example": "Rejecting a library that has no updates in 3 years and 50 open security issues in favor of a slightly larger but active alternative."
+    },
+    {
+      "id": "db13",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a situation where you find a massive flaw in the core architecture of a project you just joined?",
+      "answer": "I document the flaw, its impact on performance and safety, and prepare a gradual, low-risk refactoring plan rather than complaining or demanding an immediate rewrite.",
+      "example": "Finding that passwords are saved in plain text, documenting the security risk, and proposing a hash-and-salt migration plan."
+    },
+    {
+      "id": "db14",
+      "difficulty": "Advanced",
+      "question": "How do you think critically about optimizing a slow page without guessing what is slow?",
+      "answer": "I use profiler tools (like Lighthouse or Chrome DevTools Performance tab) to get precise data on load times, layout shifts, and script execution before writing a single line of code.",
+      "example": "Profiling a page to find that a slow font file, not the database query, was delaying the initial page paint."
+    },
+    {
+      "id": "db15",
+      "difficulty": "Advanced",
+      "question": "How do you explain a strange, illogical behavior in a framework you are using to a junior teammate?",
+      "answer": "I explain the history of the framework, the trade-offs the creators made, and the underlying Javascript/browser behavior that causes the quirk.",
+      "example": "Explaining how React's asynchronous state batching works, showing why state doesn't update immediately on the next line."
     }
   ],
   "data_structures": [
@@ -194,6 +404,76 @@ const QUESTION_BANK = {
       "question": "How do you build trust with teammates?",
       "answer": "I build trust by being honest, dependable, and respectful in how I communicate and work. Trust grows when people know they can rely on me to do what I said I would do.",
       "example": "If I promise to finish the script for our presentation by Friday, I complete it on time or update the team early if there is a problem."
+    },
+    {
+      "id": "tw6",
+      "difficulty": "Intermediate",
+      "question": "How do you work with a teammate whose technical weakness is slowing down the entire project?",
+      "answer": "I offer support without being condescending. I pair program with them, help break down their tasks into smaller chunks, and focus on helping them succeed for the good of the team.",
+      "example": "Spending an hour showing a teammate how to write CSS Flexbox layouts so they can complete their assigned UI dashboard."
+    },
+    {
+      "id": "tw7",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a team dynamic where members have highly eccentric, strange, or difficult working styles?",
+      "answer": "I respect individual differences and focus on clear, structured communication. I agree on common formats for updates and deliverables so everyone can work in their own way while meeting team standards.",
+      "example": "Letting a quiet classmate submit their updates in writing via Slack while others discuss them over voice calls."
+    },
+    {
+      "id": "tw8",
+      "difficulty": "Advanced",
+      "question": "Describe a time when your team failed, and how you handled the post-mortem without pointing fingers.",
+      "answer": "I focused entirely on the system and process failures rather than individual mistakes. I suggested actionable steps to prevent the failure from happening again.",
+      "example": "When we missed a deadline, instead of blaming the coder who was late, I suggested we implement daily check-ins to spot blockers earlier."
+    },
+    {
+      "id": "tw9",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a situation where you disagree with the majority of the team on a technical choice?",
+      "answer": "I share my reasoning clearly and provide evidence. However, once the team or lead makes a decision, I fully commit to supporting and implementing it, even if I preferred another option.",
+      "example": "Disagreeing on database choice but working hard to write clean, optimized code for the database the team ultimately selected."
+    },
+    {
+      "id": "tw10",
+      "difficulty": "Basic",
+      "question": "How do you make sure that credit is distributed fairly within your project group?",
+      "answer": "I publicly acknowledge the contributions of my teammates during updates. I make sure that less visible work, like testing or documentation, is valued and praised.",
+      "example": "Saying in a demo: \"Alice wrote the database logic, and Bob spent hours cleaning up the API data which made the frontend implementation very easy.\""
+    },
+    {
+      "id": "tw11",
+      "difficulty": "Intermediate",
+      "question": "What do you do when a teammate is highly defensive about your comments during a peer code review?",
+      "answer": "I explain that my comments are focused on the code and its readability/security, not their personal ability. I explain the \"why\" behind my suggestion and ask for their thoughts.",
+      "example": "Suggesting: \"Changing this loop could prevent a memory leak\" instead of \"Your code is slow.\""
+    },
+    {
+      "id": "tw12",
+      "difficulty": "Advanced",
+      "question": "How do you help onboard a new teammate who feels lost and has imposter syndrome?",
+      "answer": "I share my own early struggles to normalize their feelings. I give them simple, achievable tasks first to build their confidence, and let them know there are no stupid questions.",
+      "example": "Giving them a simple copy change or CSS fix on day one and celebrating their first merged pull request."
+    },
+    {
+      "id": "tw13",
+      "difficulty": "Basic",
+      "question": "How do you balance being helpful to your teammates with completing your own tasks on time?",
+      "answer": "I block out focused time for my own work, and set specific times during the day for answering questions, pair programming, or reviewing code.",
+      "example": "Telling a teammate: \"I have to finish this API by 2 PM, but I can jump on a call with you immediately after that to look at your bug.\""
+    },
+    {
+      "id": "tw14",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a team member who tries to take credit for work that you did?",
+      "answer": "I don't start a conflict. During the next team meeting or code check-in, I present the technical details of my work, demonstrating my deep knowledge and ownership of that component.",
+      "example": "Explaining the detailed architecture of the state manager during the project demo to show how I built the core logic."
+    },
+    {
+      "id": "tw15",
+      "difficulty": "Advanced",
+      "question": "How do you rebuild trust with a teammate after a heated professional disagreement?",
+      "answer": "I reach out privately, acknowledge the tension, confirm that I respect their skills, and focus on our shared goals to move forward constructively.",
+      "example": "Saying: \"I know we had different views on the layout, but I really appreciate your focus on UX. Let's make sure the next phase goes smoothly.\""
     }
   ],
   "algorithms": [
@@ -231,6 +511,76 @@ const QUESTION_BANK = {
       "question": "How do you stay effective in an unfamiliar environment?",
       "answer": "I observe carefully, ask useful questions, and stay open to different ways of working. Adaptability is not pretending to know everything. It is learning fast and staying calm while adjusting.",
       "example": "During an internship, I may need to follow a new communication style or schedule, so I observe the team and adjust quickly."
+    },
+    {
+      "id": "ad6",
+      "difficulty": "Intermediate",
+      "question": "How do you adapt when you are thrown into a new role with vague processes and very strange legacy systems?",
+      "answer": "I spend time observing, documenting the current system as I learn it, and asking clarifying questions. I focus on making small, safe improvements rather than trying to rewrite everything.",
+      "example": "Creating a quick setup guide for myself while navigating a messy legacy code repository, which I then share with the team."
+    },
+    {
+      "id": "ad7",
+      "difficulty": "Intermediate",
+      "question": "What is your biggest weakness when plans change suddenly, and how do you manage it?",
+      "answer": "My weakness is initially feeling disappointed when work I did is discarded. I manage it by reminding myself that changing direction is a business reality, and my code is a tool, not my identity.",
+      "example": "If a feature is cut after I spent a week building it, I save the code in a branch for reference and pivot immediately to the new priority."
+    },
+    {
+      "id": "ad8",
+      "difficulty": "Advanced",
+      "question": "How do you adapt when the framework or library you mastered is suddenly deprecated for a new, untested tool?",
+      "answer": "I focus on the transferable concepts. Languages and libraries are just tools. I read the documentation of the new tool, build small prototypes, and learn its core paradigms.",
+      "example": "Moving from class components in React to hooks, or migrating to a new framework by identifying the shared routing and state concepts."
+    },
+    {
+      "id": "ad9",
+      "difficulty": "Advanced",
+      "question": "How do you stay calm and effective when you are assigned to support a critical system crash in a language you barely know?",
+      "answer": "I rely on universal concepts: reading error messages, checking logs, comparing the broken state with a working version, and using google/documentation to translate syntax.",
+      "example": "Debugging a syntax crash in a Python script by using print statements and online syntax guides, even though my main language is JavaScript."
+    },
+    {
+      "id": "ad10",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a situation where a client changes the project requirements just days before the final deadline?",
+      "answer": "I assess what can realistically be completed, present the options to the client (e.g., delay the deadline, or launch the original version and add the changes in a phase 2), and let them decide.",
+      "example": "Explaining that we can add the payment gateway by next week, or launch on time with a simple bank transfer option."
+    },
+    {
+      "id": "ad11",
+      "difficulty": "Basic",
+      "question": "How do you learn a new framework or technology when you only have a weekend to prepare?",
+      "answer": "I skip long courses and build a small, functional app immediately. Active learning through debugging helps me understand the core concepts much faster.",
+      "example": "Building a simple to-do list app in Vue over the weekend to understand its data-binding and reactivity system."
+    },
+    {
+      "id": "ad12",
+      "difficulty": "Intermediate",
+      "question": "Tell me about a time you had to change your working style to fit a team's culture?",
+      "answer": "I observed how the team communicated, handled tasks, and ran meetings. I adjusted my style to match theirs so we could collaborate without friction.",
+      "example": "Moving from a highly informal team to a team that documented every single decision in Jira, and learning to write detailed task descriptions."
+    },
+    {
+      "id": "ad13",
+      "difficulty": "Intermediate",
+      "question": "How do you handle it when your teacher or manager gives you feedback that completely contradicts their previous advice?",
+      "answer": "I don't point out the contradiction defensively. I politely ask for clarification to ensure I align with their current vision, recognizing that goals can change.",
+      "example": "Saying: \"I want to make sure I get this right. Previously we focused on adding features, but now we are prioritizing speed. Should I pause feature work?\""
+    },
+    {
+      "id": "ad14",
+      "difficulty": "Advanced",
+      "question": "How do you handle working under a new manager who has a very different management style than your previous one?",
+      "answer": "I schedule a short check-in to learn their preferences: how they prefer updates (slack, email, or meeting), what metrics they value, and how I can best support the team under their leadership.",
+      "example": "Adapting from a hands-off manager to one who prefers daily standups by preparing short, clear summaries of my work each morning."
+    },
+    {
+      "id": "ad15",
+      "difficulty": "Advanced",
+      "question": "What do you do when a key teammate leaves the project, leaving you to handle their complex tasks alone?",
+      "answer": "I request a quick knowledge transfer before they leave, document their active tasks, prioritize the work with my manager, and adjust deadlines to match the new capacity.",
+      "example": "Mapping out the departing teammate's undocumented API endpoints so I can maintain them after they leave."
     }
   ],
   "oop": [
@@ -268,6 +618,76 @@ const QUESTION_BANK = {
       "question": "How do you lead by example?",
       "answer": "I do the work I expect from others, stay accountable, and treat people with respect. Leadership by example builds credibility because people trust actions more than words.",
       "example": "If I ask the group to be on time, I make sure I arrive prepared and on time myself."
+    },
+    {
+      "id": "ld6",
+      "difficulty": "Intermediate",
+      "question": "How do you lead a project or initiative when you have no formal authority or title over the team?",
+      "answer": "I lead through influence, empathy, and organization. I build trust by being reliable, helping resolve conflicts, and making sure everyone's ideas are heard and respected.",
+      "example": "Organizing a study group, setting up a shared Google Drive, and proposing a weekly schedule that everyone agrees to follow."
+    },
+    {
+      "id": "ld7",
+      "difficulty": "Advanced",
+      "question": "How do you lead a teammate who is highly talented but has a strange, eccentric, or disruptive work behavior?",
+      "answer": "I focus on their output and steer their energy productively. I set clear boundaries for group interactions, while giving them the space they need to do their best individual work.",
+      "example": "Letting a brilliant but eccentric classmate work alone on the algorithm implementation, while keeping them aligned during daily standups."
+    },
+    {
+      "id": "ld8",
+      "difficulty": "Advanced",
+      "question": "Tell me about a leadership decision you made that turned out to be a mistake, and how you handled the consequences.",
+      "answer": "I took responsibility for the mistake immediately. I gathered the team, explained what went wrong, and worked collectively to pivot to a better solution.",
+      "example": "Choosing a database that was too complex for a project, admitting the error to the team, and helping migrate back to a simpler SQL database."
+    },
+    {
+      "id": "ld9",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a team member who constantly challenges your leadership or ideas?",
+      "answer": "I listen to their criticisms in a calm and objective manner. If their points are valid, I incorporate them. If they are just being difficult, I address it privately to find a constructive way forward.",
+      "example": "Discussing their concerns privately, showing that I value their input, and asking how we can work together to achieve the project's goals."
+    },
+    {
+      "id": "ld10",
+      "difficulty": "Basic",
+      "question": "How do you help a teammate who is struggling with self-confidence and self-doubt?",
+      "answer": "I highlight their specific strengths, give them tasks where they can succeed, and offer constructive feedback privately to build their confidence step-by-step.",
+      "example": "Praise their documentation skills in front of the group, and ask for their help in organizing the project files."
+    },
+    {
+      "id": "ld11",
+      "difficulty": "Intermediate",
+      "question": "How do you delegate tasks in a team where everyone has different skill levels?",
+      "answer": "I match tasks with strengths, but also look for growth opportunities. I assign high-risk tasks to experienced members and give junior members learning tasks with mentorship support.",
+      "example": "Pairing a beginner with an experienced teammate to work on the database schema, ensuring the database is solid while the beginner learns."
+    },
+    {
+      "id": "ld12",
+      "difficulty": "Intermediate",
+      "question": "What do you do when a conflict between two teammates threatens to stall the entire project?",
+      "answer": "I act as a neutral mediator. I listen to both sides privately, find common ground, and steer the discussion back to the project's requirements and goals.",
+      "example": "Getting two arguing developers to focus on the performance metrics of their code rather than making personal criticisms."
+    },
+    {
+      "id": "ld13",
+      "difficulty": "Basic",
+      "question": "How do you keep your team motivated when progress is slow and the project feels boring?",
+      "answer": "I break the remaining work into small, achievable goals, celebrate minor wins, and remind the team of the final impact of their work.",
+      "example": "Ordering pizza for a late-night coding session and celebrating when we successfully merge the frontend with the backend."
+    },
+    {
+      "id": "ld14",
+      "difficulty": "Advanced",
+      "question": "How do you advocate for your team when a manager sets an unrealistic deadline?",
+      "answer": "I present data: I show the team's velocity, list the tasks required, and propose a realistic scope that can be delivered on time with high quality.",
+      "example": "Presenting a sprint chart showing that we need 10 days, not 5, to deliver a secure login system, and proposing we cut minor features to meet the 5-day slot."
+    },
+    {
+      "id": "ld15",
+      "difficulty": "Advanced",
+      "question": "How do you prepare your team to handle a critical presentation or deployment successfully?",
+      "answer": "I run a dry run or staging deployment. I assign clear roles for the event, prepare backup plans for failures, and make sure everyone knows their responsibilities.",
+      "example": "Setting up a backup slide deck and assigning a co-presenter to take over if anyone's internet connection drops."
     }
   ],
   "database": [
@@ -305,6 +725,76 @@ const QUESTION_BANK = {
       "question": "How do you stay organized over a busy week?",
       "answer": "I use a simple plan such as a calendar, task list, or schedule, and I review it regularly. Staying organized works best when I know what needs to be done each day.",
       "example": "At the start of the week, I list classes, deadlines, and study times so I can see where to focus."
+    },
+    {
+      "id": "tm6",
+      "difficulty": "Intermediate",
+      "question": "What is your biggest time management weakness, and what system do you use to control it?",
+      "answer": "My weakness is overestimating how much I can get done in a day. I manage this by tracking my time, adding a 20% buffer to estimates, and planning only three main tasks per day.",
+      "example": "Using a digital calendar to block specific times for coding, writing reports, and resting to avoid burnout."
+    },
+    {
+      "id": "tm7",
+      "difficulty": "Advanced",
+      "question": "How do you manage your time when a project has a chaotic, unpredictable, or constantly changing schedule?",
+      "answer": "I prioritize tasks dynamically. I focus on core essentials first, maintain a flexible task list, and communicate changes in my capacity immediately to my team.",
+      "example": "Working in short, focused sprints and daily planning sessions during a hackathon to adjust to shifting guidelines."
+    },
+    {
+      "id": "tm8",
+      "difficulty": "Intermediate",
+      "question": "What do you do when you realize you have severely underestimated the time required to complete a task?",
+      "answer": "I raise the issue early. I explain why the task is taking longer, present my current progress, and ask for support or a deadline adjustment before it's too late.",
+      "example": "Finding a bug in a API took 5 hours instead of 1, so I updated the group at noon rather than waiting for the evening standup."
+    },
+    {
+      "id": "tm9",
+      "difficulty": "Advanced",
+      "question": "How do you manage your time when you are working on multiple projects with different managers?",
+      "answer": "I keep a single, centralized calendar of all deliverables. If conflicts arise, I bring the managers together to agree on which project takes priority.",
+      "example": "Showing both project leads my weekly schedule so they can agree on how to split my hours fairly."
+    },
+    {
+      "id": "tm10",
+      "difficulty": "Basic",
+      "question": "How do you handle distractions (like social media or emails) when you need to focus on a difficult task?",
+      "answer": "I use the Pomodoro technique. I turn off notifications, block distracting websites, and focus completely for 25 minutes before taking a short break.",
+      "example": "Putting my phone in another room and using a browser extension to block social media during study sessions."
+    },
+    {
+      "id": "tm11",
+      "difficulty": "Intermediate",
+      "question": "How do you decide when a task is \"good enough\" to submit, rather than wasting time trying to make it perfect?",
+      "answer": "I compare my work against the project requirements and acceptance criteria. If it meets all criteria, passes testing, and is clean, I submit it and move to the next task.",
+      "example": "Submitting a working dashboard layout that looks clean and professional instead of spending three extra hours tweaking pixel shadows."
+    },
+    {
+      "id": "tm12",
+      "difficulty": "Basic",
+      "question": "How do you handle a situation where you are waiting on someone else's work to start your own task?",
+      "answer": "I don't stay idle. I work on other tasks, prepare mock data or structures to use when their work arrives, or offer to help them finish their part.",
+      "example": "Writing mock API responses for the frontend while waiting for the backend developer to deploy the real server."
+    },
+    {
+      "id": "tm13",
+      "difficulty": "Intermediate",
+      "question": "What is your approach to planning your week to ensure you have a good balance of work and rest?",
+      "answer": "I plan my week on Sunday. I block out times for classes, project work, and study, but I also schedule rest, exercise, and hobbies to avoid burnout.",
+      "example": "Scheduling no project work after 7 PM each day to ensure I get enough rest to stay focused the next morning."
+    },
+    {
+      "id": "tm14",
+      "difficulty": "Advanced",
+      "question": "How do you manage your time when you are given a task with no deadline or guidance?",
+      "answer": "I set my own realistic deadline, create a simple project outline, and check in with the requester to confirm if the timeline fits their expectations.",
+      "example": "When asked to \"research state libraries,\" I propose a deadline of Friday to deliver a comparison document."
+    },
+    {
+      "id": "tm15",
+      "difficulty": "Advanced",
+      "question": "How do you handle time management when a critical blocker appears during a task that is due in an hour?",
+      "answer": "I focus immediately on a fallback or workaround that meets the deadline, and notify the team of the blocker and the temporary solution.",
+      "example": "Hardcoding a config file temporarily to demo a project when the remote configuration database goes down just before the presentation."
     }
   ],
   "api_backend": [
@@ -342,6 +832,76 @@ const QUESTION_BANK = {
       "question": "Why are interpersonal skills valuable in interviews?",
       "answer": "They show that a candidate can work well with others, communicate professionally, and fit into a team environment. Even strong technical people need interpersonal skills to succeed in real workplaces.",
       "example": "A student who answers politely, listens fully, and responds thoughtfully often leaves a stronger interview impression."
+    },
+    {
+      "id": "ip6",
+      "difficulty": "Intermediate",
+      "question": "How do you handle working with a classmate or colleague who has a very cold, distant, or quiet personality?",
+      "answer": "I respect their boundaries and don't force social interactions. I communicate clearly, ask for their input in structured ways, and focus on building trust through reliability.",
+      "example": "Giving them written updates and asking: \"What do you think of this approach? Let me know whenever you have time.\""
+    },
+    {
+      "id": "ip7",
+      "difficulty": "Intermediate",
+      "question": "How do you handle feelings of self-doubt or imposter syndrome in group settings or networking events?",
+      "answer": "I remind myself that learning is a process and everyone has gaps. I focus on listening, asking curious questions, and contributing what I know rather than trying to look perfect.",
+      "example": "Instead of staying quiet, I ask: \"That's an interesting approach, could you explain how you handled the security setup?\""
+    },
+    {
+      "id": "ip8",
+      "difficulty": "Advanced",
+      "question": "How do you deliver awkward, disappointing, or bad news to a stakeholder without ruining the relationship?",
+      "answer": "I present the facts honestly, show empathy, explain the steps we are taking to resolve the issue, and provide options they can choose from.",
+      "example": "Telling a client that a feature will be delayed by a week, apologizing for the inconvenience, and offering a discount or a partial launch."
+    },
+    {
+      "id": "ip9",
+      "difficulty": "Advanced",
+      "question": "How do you handle a situation where a client or teammate is yelling or acting highly unprofessional towards you?",
+      "answer": "I stay completely calm and professional. I do not match their anger. I listen to the issue underneath, and if they continue, I politely suggest we resume the discussion when we can focus on solutions.",
+      "example": "Saying: \"I understand you are frustrated, and I want to resolve this. Let's take a 10-minute break and look at the options calmly.\""
+    },
+    {
+      "id": "ip10",
+      "difficulty": "Intermediate",
+      "question": "How do you build rapport with a client or team member from a completely different cultural background?",
+      "answer": "I stay open-minded, respect cultural differences, avoid slang, and listen carefully. I show genuine interest in their perspective and adapt my style to be respectful.",
+      "example": "Learning basic greetings in a client's language and checking their national holidays to avoid scheduling critical meetings on those days."
+    },
+    {
+      "id": "ip11",
+      "difficulty": "Basic",
+      "question": "How do you handle feedback on your behavior or attitude that you feel is unfair?",
+      "answer": "I avoid reacting defensively. I thank the person for the feedback, take time to reflect on it, and ask for specific examples so I can understand their perspective.",
+      "example": "Asking: \"Could you tell me which meeting you felt I was dismissive, so I can understand what I did wrong?\""
+    },
+    {
+      "id": "ip12",
+      "difficulty": "Intermediate",
+      "question": "What do you do when a teammate is going through a personal crisis that is affecting their work?",
+      "answer": "I show empathy and ask how I can support them. I help them adjust their workload and work with the team to cover their tasks while they manage the situation.",
+      "example": "Telling a teammate whose relative is sick: \"Focus on your family. I will cover your standup update today and help finish the slides.\""
+    },
+    {
+      "id": "ip13",
+      "difficulty": "Basic",
+      "question": "How do you show appreciation to your peers without sounding insincere?",
+      "answer": "I give specific praise. I explain exactly what they did and how it helped the project or the team, rather than giving generic compliments.",
+      "example": "Saying: \"Thank you for fixing the database configuration yesterday. It saved us hours of setup and let us start frontend testing early.\""
+    },
+    {
+      "id": "ip14",
+      "difficulty": "Advanced",
+      "question": "How do you handle a situation where you have to work with someone you personally dislike?",
+      "answer": "I keep my focus entirely on the project's success. I treat them with the same respect and professionalism as anyone else, keeping interactions polite and productive.",
+      "example": "Working closely with a difficult classmate to finish the UI design, focusing only on the wireframes and user flows."
+    },
+    {
+      "id": "ip15",
+      "difficulty": "Advanced",
+      "question": "How do you manage expectations when a stakeholder asks for a feature that is impossible to build within their budget?",
+      "answer": "I explain the technical and financial constraints clearly. I then propose a simplified alternative that meets their core needs within their budget.",
+      "example": "Proposing a simpler static website with a contact form instead of a fully custom database-driven web application."
     }
   ],
   "security": [
@@ -379,6 +939,76 @@ const QUESTION_BANK = {
       "question": "How does integrity affect teamwork?",
       "answer": "Teams work better when members trust each other to be truthful, fair, and responsible. Integrity reduces confusion and builds a stronger working environment.",
       "example": "If I cannot finish my part on time, integrity means telling the team early instead of pretending everything is fine."
+    },
+    {
+      "id": "in6",
+      "difficulty": "Intermediate",
+      "question": "What do you do if you notice a subtle, technical loophole that could save your project money but violates security standards?",
+      "answer": "I do not use it. Integrity means maintaining standards even when shortcuts are easy. I document the security risk and report the loophole so it can be fixed.",
+      "example": "Rejecting a method that bypasses user authentication to load pages faster, and choosing to optimize the database queries instead."
+    },
+    {
+      "id": "in7",
+      "difficulty": "Advanced",
+      "question": "How do you respond if a supervisor or client asks you to do something that feels ethically grey or strange?",
+      "answer": "I ask for clarification to ensure I didn't misunderstand. If it is indeed unethical, I explain my concerns regarding compliance, safety, or legal standards, and suggest an ethical alternative.",
+      "example": "Refusing to write code that hides unsubscribe buttons, and suggesting a clean, compliant user settings page instead."
+    },
+    {
+      "id": "in8",
+      "difficulty": "Advanced",
+      "question": "What do you do if you make a major mistake on a project that nobody else has noticed yet, and could easily be hidden?",
+      "answer": "I report it immediately to the team or lead. Owning mistakes builds trust. I explain what happened and present a plan to fix the error.",
+      "example": "Noticing I accidentally deleted a database index that caused performance lag, reporting it, and applying the fix immediately."
+    },
+    {
+      "id": "in9",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a situation where you realize a coworker is copying code from an open-source project without respecting its license?",
+      "answer": "I discuss it privately with them, explain the legal and compliance risks for the project, and help them find a properly licensed alternative.",
+      "example": "Showing a teammate that a library they copied requires a commercial license, and helping them find an MIT-licensed alternative."
+    },
+    {
+      "id": "in10",
+      "difficulty": "Basic",
+      "question": "What does \"doing the right thing\" mean when you are working on a school project with friends?",
+      "answer": "It means doing my fair share of the work, being honest about my progress, and not letting my friends carry my load because we are close.",
+      "example": "Working late to finish my part of the presentation so my friends don't have to scramble to write it for me."
+    },
+    {
+      "id": "in11",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a situation where a client asks you to exaggerate your project's performance metrics to investors?",
+      "answer": "I refuse. I explain that presenting accurate data builds long-term trust, whereas exaggerations create legal risks and ruin credibility. I suggest highlighting our real improvements instead.",
+      "example": "Refusing to double the reported page load speeds in a deck, and focusing on the 20% real increase we achieved."
+    },
+    {
+      "id": "in12",
+      "difficulty": "Basic",
+      "question": "How do you handle a mistake in a presentation where you gave incorrect data, but no one noticed during the meeting?",
+      "answer": "I follow up in writing with the correct information as soon as possible. Being honest about data ensures decisions are made on correct facts.",
+      "example": "Sending an email after the demo: \"I checked the logs, and our user registration increased by 15%, not 25% as I stated. Apologies for the confusion.\""
+    },
+    {
+      "id": "in13",
+      "difficulty": "Intermediate",
+      "question": "What do you do when you see a classmate or teammate cheating on an assessment or copying another group's code?",
+      "answer": "I advise them privately to stop, explaining the risk of failing or being expelled. If it affects our group's work directly, I insist we write our own code to maintain our project's integrity.",
+      "example": "Telling a classmate: \"Let's rewrite this part ourselves. Copying this file could get our whole team disqualified.\""
+    },
+    {
+      "id": "in14",
+      "difficulty": "Advanced",
+      "question": "How do you manage a situation where you are given access to sensitive user data during testing?",
+      "answer": "I handle the data with strict privacy. I use only mock or anonymized data for testing, ensure the real data is not stored locally on my machine, and follow all data security rules.",
+      "example": "Deleting real user database dumps from my local machine immediately after verifying a migration bug."
+    },
+    {
+      "id": "in15",
+      "difficulty": "Advanced",
+      "question": "How do you handle a conflict between your personal values and a project you are assigned to work on?",
+      "answer": "I discuss it professionally with my manager. I explain my concerns without judgment and ask if there are alternative projects or tasks I can work on that align better with my values.",
+      "example": "Requesting to move off a project that involves building predatory billing features, and moving to the core infrastructure team instead."
     }
   ],
   "ux_ui": [
@@ -416,6 +1046,76 @@ const QUESTION_BANK = {
       "question": "How do you balance creativity with practicality?",
       "answer": "I try to produce ideas that are both interesting and realistic. Strong creativity is not only about being different. It is about creating something useful that fits the time and goal.",
       "example": "For an interview task, I may choose a simple but original answer structure that is clear and easy to deliver."
+    },
+    {
+      "id": "cr6",
+      "difficulty": "Intermediate",
+      "question": "What is your process when you hit a creative block, and how do you get past it?",
+      "answer": "I step away from the computer. I seek inspiration in other fields, sketch ideas on paper, look at design galleries, or discuss the problem with someone who is not involved in the project.",
+      "example": "Taking a 10-minute walk or sketching layout wireframes with a pencil when I can't decide how to design a user dashboard."
+    },
+    {
+      "id": "cr7",
+      "difficulty": "Intermediate",
+      "question": "How do you present a highly unusual or strange creative solution to a traditional or conservative team?",
+      "answer": "I start with the problem they care about. I explain how my unusual solution solves that problem better, show a quick mock-up, and present data or reference cases to build trust.",
+      "example": "Showing how an interactive quiz increases user registration by 40% compared to a traditional static form."
+    },
+    {
+      "id": "cr8",
+      "difficulty": "Advanced",
+      "question": "How do you turn a very limiting or strange project constraint into a creative opportunity?",
+      "answer": "I treat limits as guidelines that narrow my focus. Constraints force me to think outside the box and find simple, elegant solutions that require fewer resources.",
+      "example": "When told we can't use images to keep load times under 1 second, I use CSS gradients and typography to create a stunning, lightweight design."
+    },
+    {
+      "id": "cr9",
+      "difficulty": "Advanced",
+      "question": "How do you handle a situation where a client rejects a creative design that you spent weeks perfecting?",
+      "answer": "I do not take it personally. I ask questions to understand their concerns, identify their preferences, and work on a revised design that blends my expertise with their feedback.",
+      "example": "Creating three small, style variations of a rejected landing page to see which direction the client prefers before doing a full redesign."
+    },
+    {
+      "id": "cr10",
+      "difficulty": "Basic",
+      "question": "How do you find creative ways to make a boring or routine task more engaging?",
+      "answer": "I look for ways to automate the routine parts, gamify my progress, or find a new perspective that makes the task a learning opportunity.",
+      "example": "Writing a short bash script to automate file reorganization, which turns a boring manual task into a coding challenge."
+    },
+    {
+      "id": "cr11",
+      "difficulty": "Intermediate",
+      "question": "How do you encourage quiet team members to share their creative ideas during brainstorming?",
+      "answer": "I use structured brainstorming methods, like asking everyone to write down three ideas on sticky notes first, so quiet members don't have to compete with louder voices.",
+      "example": "Using a digital whiteboard where everyone adds ideas anonymously, ensuring all suggestions are evaluated fairly."
+    },
+    {
+      "id": "cr12",
+      "difficulty": "Basic",
+      "question": "What is the difference between creativity that is useful and creativity that is just self-expression?",
+      "answer": "Useful creativity solves a specific problem or meets a user need. Self-expression is about personal taste. In product design, creativity must always serve the user and the project goals.",
+      "example": "Designing a navigation menu that is unique but still easy for a first-time user to understand, rather than one that looks artistic but is confusing."
+    },
+    {
+      "id": "cr13",
+      "difficulty": "Intermediate",
+      "question": "How do you stay updated with design and technology trends without feeling overwhelmed?",
+      "answer": "I subscribe to a few curated newsletters and spend 15 minutes each morning browsing articles. I focus on learning the core concepts of trends rather than trying to master every new library.",
+      "example": "Reading a weekly web design digest to understand CSS features like Grid and container queries without immediately installing 10 new packages."
+    },
+    {
+      "id": "cr14",
+      "difficulty": "Advanced",
+      "question": "Describe a time you solved a technical bug using a highly creative, non-traditional method?",
+      "answer": "I looked at the problem from a different angle. Instead of trying to fix a slow API response, I pre-fetched the data in the background before the user clicked, making the app feel instant.",
+      "example": "Loading user profile details when they hover over the settings button, making the page transition feel immediate."
+    },
+    {
+      "id": "cr15",
+      "difficulty": "Advanced",
+      "question": "How do you balance creative design choices with accessibility standards (like screen readers)?",
+      "answer": "I treat accessibility as a design requirement, not an afterthought. I ensure colors have high contrast, layouts are keyboard-navigable, and HTML is semantic, proving that accessible design can still be beautiful.",
+      "example": "Designing a dark mode that uses proper contrast ratios for text readability while maintaining a premium, modern aesthetic."
     }
   ],
   "qa": [
@@ -453,6 +1153,76 @@ const QUESTION_BANK = {
       "question": "How does attention to detail improve teamwork?",
       "answer": "It helps the whole team avoid preventable errors and creates confidence in each person's work. When details are handled well, teamwork becomes smoother and more efficient.",
       "example": "If I double-check my numbers before sharing them with the team, others can build on my work with more confidence."
+    },
+    {
+      "id": "at6",
+      "difficulty": "Intermediate",
+      "question": "How do you maintain high attention to detail when you are feeling tired, burnt out, or doing a very repetitive task?",
+      "answer": "I use checklists, take regular short breaks, and automate validation where possible. I also run checks in small batches to keep my focus sharp.",
+      "example": "Creating a deploy checklist to ensure I don't forget to run migrations or update environment variables when tired."
+    },
+    {
+      "id": "at7",
+      "difficulty": "Advanced",
+      "question": "Describe a time you noticed a tiny, strange detail that everyone else missed, which saved the project from failure?",
+      "answer": "I reviewed the configuration files during a code review and noticed a small typo in a security setting that would have exposed user emails publicly.",
+      "example": "Noticing a missing `NODE_ENV` check that was loading dev credentials in staging, and reporting it before launch."
+    },
+    {
+      "id": "at8",
+      "difficulty": "Intermediate",
+      "question": "How do you balance attention to detail with the need to deliver work on time, avoiding the weakness of over-perfectionism?",
+      "answer": "I prioritize details that affect security, performance, and core user flows. I accept minor visual imperfections if they don't impact usability, and log them as low-priority tasks for later.",
+      "example": "Ensuring the checkout form validates inputs correctly, while leaving a minor button alignment tweak for a future sprint."
+    },
+    {
+      "id": "at9",
+      "difficulty": "Advanced",
+      "question": "What is your process for checking code quality before submitting a pull request?",
+      "answer": "I run tests, double-check that I removed all debugging console logs, review my own diff line-by-line, and verify that my changes don't create unexpected side-effects.",
+      "example": "Reading my Git diff before committing to ensure no temporary config files or comments are included in the branch."
+    },
+    {
+      "id": "at10",
+      "difficulty": "Basic",
+      "question": "How do you handle a situation where a teammate submits work with many small formatting and spelling mistakes?",
+      "answer": "I help them by pointing out the errors constructively. I suggest using tools like linters or spelling checkers to automate formatting, making it easier for them to write clean code.",
+      "example": "Helping a teammate set up Prettier in VS Code so their files are formatted automatically on save."
+    },
+    {
+      "id": "at11",
+      "difficulty": "Intermediate",
+      "question": "How do you ensure that all edge cases are covered when testing a new feature?",
+      "answer": "I list all possible user inputs, including empty values, extremely long text, special characters, and negative numbers. I write tests for these inputs to ensure the system handles them without crashing.",
+      "example": "Testing a user registration form by inputting special characters in the name field and checking if the server handles it safely."
+    },
+    {
+      "id": "at12",
+      "difficulty": "Basic",
+      "question": "Why is it important to follow naming conventions in coding and file organization?",
+      "answer": "Naming conventions make the project readable and easy to navigate for the whole team. It reduces the time spent searching for files and prevents name conflicts.",
+      "example": "Naming variables as `isUserLoggedIn` instead of `logged_in` or `status` to make their purpose clear immediately."
+    },
+    {
+      "id": "at13",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a bug report that says \"the layout looks slightly broken on some screens\"?",
+      "answer": "I ask for the exact screen size or device. I use browser tools to simulate various viewports, inspect the CSS, and verify if responsive rules are applied correctly.",
+      "example": "Testing the page on a 320px width screen to find that a padding setting is causing horizontal scrolling."
+    },
+    {
+      "id": "at14",
+      "difficulty": "Advanced",
+      "question": "How do you ensure database migrations don't cause data loss during a schema update?",
+      "answer": "I write rollback scripts, run the migration on a local backup of the database first, verify the data integrity, and check that no fields are unexpectedly deleted.",
+      "example": "Testing a SQL migration locally to confirm that changing a column type doesn't truncate long descriptions."
+    },
+    {
+      "id": "at15",
+      "difficulty": "Advanced",
+      "question": "How do you verify that a third-party API is returning the exact data structure your app expects?",
+      "answer": "I write schema validation tests (like Zod or JSON Schema) that check the types and structure of the API response, alerting us if the external API changes their format.",
+      "example": "Creating an API client wrapper that logs an error if the user object returned by the server is missing the required email string."
     }
   ],
   "dba": [
@@ -490,6 +1260,76 @@ const QUESTION_BANK = {
       "question": "How does emotional intelligence help during interviews?",
       "answer": "It helps candidates stay calm, listen well, respond thoughtfully, and build a positive connection with interviewers. Emotional control and awareness can strengthen even simple answers.",
       "example": "If an interviewer asks a difficult question, I stay composed and answer honestly instead of panicking."
+    },
+    {
+      "id": "ei6",
+      "difficulty": "Intermediate",
+      "question": "What is your typical emotional reaction to high stress or sudden criticism, and how do you regulate it?",
+      "answer": "My first reaction is tension. I regulate it by taking a slow breath, pausing before replying, and separating my work from my self-worth so I can listen objectively.",
+      "example": "Listening to a critical review of my slides, writing down notes, and thanking the reviewer instead of explaining why they are wrong."
+    },
+    {
+      "id": "ei7",
+      "difficulty": "Advanced",
+      "question": "How do you interact with a teammate who is behaving in a highly emotional, volatile, or stressed manner?",
+      "answer": "I stay calm and quiet. I do not match their emotion. I offer a listening ear, show empathy for their stress, and wait until they are calm to discuss project details.",
+      "example": "Saying to a teammate who is venting: \"I see this deployment is really stressful. Let me handle the staging updates so you can focus on the core bug.\""
+    },
+    {
+      "id": "ei8",
+      "difficulty": "Advanced",
+      "question": "How do you show empathy to a client or stakeholder whose technical demands seem completely irrational or strange to you?",
+      "answer": "I look for the emotion behind their demands, like fear of budget loss or pressure from their bosses. I acknowledge their concern first, then explain the technical limitations with patience.",
+      "example": "Saying: \"I understand that having this feature ready by Friday is critical for your board meeting. Let's build a prototype for the demo first.\""
+    },
+    {
+      "id": "ei9",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a situation where you feel completely overwhelmed and want to give up on a project?",
+      "answer": "I pause, accept my feelings of overwhelm, and break the work into tiny actions. I talk to my manager or mentor to adjust expectations and ask for support if needed.",
+      "example": "Taking a break to organize my tasks, then deciding to focus only on fixing one simple styling bug to get back on track."
+    },
+    {
+      "id": "ei10",
+      "difficulty": "Basic",
+      "question": "How do you celebrate a teammate's success when you are feeling jealous or left out?",
+      "answer": "I focus on their effort. I remind myself that their success helps the whole team, and I congratulate them sincerely, which helps me overcome my own negative feelings.",
+      "example": "Writing a Slack post: \"Congratulations to Alice for getting her database optimization merged! It improved our page speed by 30%.\""
+    },
+    {
+      "id": "ei11",
+      "difficulty": "Intermediate",
+      "question": "How do you deliver constructive criticism to a teammate who takes feedback very personally?",
+      "answer": "I focus on the work, not their personality. I ask them how they feel about their work first, point out what went well, and suggest one specific improvement we can work on.",
+      "example": "Saying: \"Your research is excellent. Let's restructure the slides to make it easier to read. What template do you think works best?\""
+    },
+    {
+      "id": "ei12",
+      "difficulty": "Basic",
+      "question": "Why is self-awareness important when working in a diverse team?",
+      "answer": "Self-awareness helps me know my own triggers, biases, and communication habits. It lets me adjust my behavior so I don't offend others or react poorly during discussions.",
+      "example": "Knowing I talk too fast when excited, so I make a conscious effort to slow down and let others speak during team discussions."
+    },
+    {
+      "id": "ei13",
+      "difficulty": "Intermediate",
+      "question": "How do you rebuild your energy and motivation after a project failure or a rejected proposal?",
+      "answer": "I let myself feel the disappointment, then reflect on the lessons learned. I focus on what I can control in the next project rather than dwelling on the past.",
+      "example": "Reviewing why our hackathon project wasn't selected, listing the feedback, and applying it to my next class assignment."
+    },
+    {
+      "id": "ei14",
+      "difficulty": "Advanced",
+      "question": "How do you handle a teammate who is constantly complaining about the project and bringing down team morale?",
+      "answer": "I listen to their concerns, but steer the conversation towards solutions. I ask: \"What is one small change we can make to fix this problem?\" to stop the complaints.",
+      "example": "When a classmate complains about a long assignment, I say: \"It is a lot of work. Let's divide the sections so we can finish it faster.\""
+    },
+    {
+      "id": "ei15",
+      "difficulty": "Advanced",
+      "question": "How do you manage your emotions when you have to make a difficult decision that will disappoint your team?",
+      "answer": "I acknowledge the difficulty of the decision and explain the \"why\" behind it honestly. I show empathy for their disappointment and focus on how we can manage the transition together.",
+      "example": "Deciding to postpone a popular feature release to ensure system security, and explaining the risks of launching it early."
     }
   ],
   "project_management": [
@@ -527,6 +1367,76 @@ const QUESTION_BANK = {
       "question": "How do you keep a project organized from start to finish?",
       "answer": "I break the project into stages, track deadlines, and review progress regularly so the team stays aligned. Organization is one of the main strengths of good project management.",
       "example": "A group can use a shared checklist or timeline to track research, editing, and rehearsal before a final presentation."
+    },
+    {
+      "id": "pm6",
+      "difficulty": "Intermediate",
+      "question": "How do you manage a project when the scope is extremely vague, strange, or constantly changing?",
+      "answer": "I use agile methods. I plan work in short cycles (sprints), deliver small working features frequently, and hold regular review sessions with the client to adjust the roadmap.",
+      "example": "Delivering a basic login page in week 1, a profile page in week 2, and adjusting the design based on weekly client feedback."
+    },
+    {
+      "id": "pm7",
+      "difficulty": "Advanced",
+      "question": "What is your approach when a critical project is stalled due to a highly unusual or unexpected bottleneck?",
+      "answer": "I gather the key people, identify the root cause of the bottleneck, re-allocate resources to clear it, and notify stakeholders of the temporary impact on the timeline.",
+      "example": "When our database server crashed during migration, I paused frontend work and had the whole team assist the database lead in data recovery."
+    },
+    {
+      "id": "pm8",
+      "difficulty": "Advanced",
+      "question": "How do you conduct a post-mortem review after a project has failed due to team weaknesses?",
+      "answer": "I focus on the system, not individuals. We list what went well, what went wrong, and write down specific, actionable process changes to prevent the failure in the next project.",
+      "example": "Creating a shared document listing all migration errors and adding a new mandatory staging test step to our deployment checklist."
+    },
+    {
+      "id": "pm9",
+      "difficulty": "Intermediate",
+      "question": "How do you manage project risks (like a team member getting sick) before they happen?",
+      "answer": "I create a risk register. I identify potential problems, cross-train team members on critical tasks, and add time buffers to the project schedule.",
+      "example": "Ensuring two people have access to the hosting keys and database backup credentials, so the launch isn't blocked if one person is offline."
+    },
+    {
+      "id": "pm10",
+      "difficulty": "Basic",
+      "question": "How do you keep project files, designs, and code organized so the team doesn't waste time searching for them?",
+      "answer": "I establish a simple folder structure and naming convention on day one. I make sure all shared documents are linked in a central project page.",
+      "example": "Setting up a readme file in the repo that links to the design assets, API documentation, and staging website."
+    },
+    {
+      "id": "pm11",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a situation where a developer tells you their task is \"90% done\" for three days in a row?",
+      "answer": "I ask them to show me what is working and what is blocking the remaining 10%. I help them break down the remaining work to find the hidden issue.",
+      "example": "Finding that the developer finished the code but is stuck on getting the styling right, so I assign a designer to help them."
+    },
+    {
+      "id": "pm12",
+      "difficulty": "Basic",
+      "question": "Why is it important to track project progress in writing rather than relying on memory or verbal updates?",
+      "answer": "Written tracking creates a clear record of agreements, shows the real project status, and prevents misunderstandings about deadlines and responsibilities.",
+      "example": "Writing a short summary of action items in Slack after a team meeting, tagging who is doing what and by when."
+    },
+    {
+      "id": "pm13",
+      "difficulty": "Intermediate",
+      "question": "How do you decide when to buy a third-party tool vs. build a custom solution for your project?",
+      "answer": "I compare the cost, development time, maintenance effort, and project needs. If a standard tool exists and fits the budget, I buy/use it to save time for building our core features.",
+      "example": "Using Firebase Authentication instead of spending three weeks writing a custom user auth and password reset system."
+    },
+    {
+      "id": "pm14",
+      "difficulty": "Advanced",
+      "question": "How do you manage project dependencies (tasks that depend on other tasks being finished first)?",
+      "answer": "I map out the tasks using a flowchart or gantt chart. I identify the \"critical path\"—the sequence of tasks that determines the project length—and monitor those tasks closely.",
+      "example": "Monitoring the database schema design closely, because the API developers cannot start writing endpoints until the schema is ready."
+    },
+    {
+      "id": "pm15",
+      "difficulty": "Advanced",
+      "question": "How do you manage a project when the team has to use a new, unstable technology that none of them have used before?",
+      "answer": "I plan a \"spike\" (a short research phase) to build a prototype first. I add a larger time buffer to tasks, document all quirks, and prepare fallback options in case the technology fails.",
+      "example": "Spending the first three days building a simple login form with the new library to test its stability before planning the full layout."
     }
   ]
 };
