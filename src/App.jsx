@@ -3,7 +3,7 @@ import {
   Search, Moon, Sun, Download, RefreshCw, ChevronDown, ChevronRight, 
   Menu, X, Star, FileText, CheckCircle, BrainCircuit, Bug, 
   Layers, Globe, Shield, UserPlus, Trash2, Users, Edit3, Award, FileSpreadsheet,
-  Palette, CheckSquare, Briefcase
+  Palette, CheckSquare, Briefcase, ClipboardList, Presentation
 } from 'lucide-react';
 
 function useLocalStorage(key, initialValue) {
@@ -45,6 +45,8 @@ const CATEGORIES = [
   { id: 'qa', name: 'Attention to Detail', icon: <CheckSquare className="w-5 h-5" /> },
   { id: 'dba', name: 'Emotional Intelligence', icon: <Award className="w-5 h-5" /> },
   { id: 'project_management', name: 'Project Management', icon: <Briefcase className="w-5 h-5" /> },
+  { id: 'task_management', name: 'Task Management', icon: <ClipboardList className="w-5 h-5" /> },
+  { id: 'presentation', name: 'Presentation', icon: <Presentation className="w-5 h-5" /> },
 ];
 
 const QUESTION_BANK = {
@@ -1437,6 +1439,150 @@ const QUESTION_BANK = {
       "question": "How do you manage a project when the team has to use a new, unstable technology that none of them have used before?",
       "answer": "I plan a \"spike\" (a short research phase) to build a prototype first. I add a larger time buffer to tasks, document all quirks, and prepare fallback options in case the technology fails.",
       "example": "Spending the first three days building a simple login form with the new library to test its stability before planning the full layout."
+    }
+  ],
+  "task_management": [
+    {
+      "id": "tkm1",
+      "difficulty": "Intermediate",
+      "question": "How do you organize your tasks when you have multiple projects with overlapping deadlines?",
+      "answer": "I list all tasks in a central planner, estimate the time required for each, and sequence them based on dependencies. I focus on finishing one task at a time rather than multitasking, which increases error rates.",
+      "example": "Using a Kanban board to track steps for a database design and a client presentation simultaneously, updating progress daily."
+    },
+    {
+      "id": "tkm2",
+      "difficulty": "Intermediate",
+      "question": "What is your main weakness in task management, and how are you addressing it?",
+      "answer": "My weakness is sometimes spending too much time planning the tasks instead of executing them. I manage this by setting a strict 10-minute limit for my morning planning session and immediately jumping into the highest priority task.",
+      "example": "Instead of detailing a 2-week plan down to the hour, I map the daily goals and spend the remaining time writing code."
+    },
+    {
+      "id": "tkm3",
+      "difficulty": "Advanced",
+      "question": "How do you handle a situation where you are assigned a task but given no tools, templates, or instructions on how to complete it?",
+      "answer": "I research industry standards or similar historical tasks in our repository to find a reference pattern. I build a rough draft using standard formats and present it early to get feedback on whether the direction is correct.",
+      "example": "When asked to write a user documentation manual from scratch, I looked up standard Markdown templates online, wrote the first chapter, and asked my lead for feedback."
+    },
+    {
+      "id": "tkm4",
+      "difficulty": "Basic",
+      "question": "How do you prioritize your daily tasks when everything feels urgent?",
+      "answer": "I use the Eisenhower Matrix to separate what is truly important from what is merely urgent. I also check with my team lead to understand which task has the largest downstream impact on others.",
+      "example": "Choosing to fix a blocking authentication bug over replying to routine team emails, even if the email notifications are piling up."
+    },
+    {
+      "id": "tkm5",
+      "difficulty": "Basic",
+      "question": "What do you do when you realize you cannot complete a promised task on time?",
+      "answer": "I notify my team or client immediately, explain the technical reasons for the delay, and propose a new, realistic completion time along with our current progress.",
+      "example": "Alerting the group at noon that the API integration is hitting unexpected rate limits, and asking to push the review from 3 PM to 5 PM."
+    },
+    {
+      "id": "tkm6",
+      "difficulty": "Intermediate",
+      "question": "How do you track and verify that all tasks in a project are actually finished to a high standard?",
+      "answer": "I define clear Acceptance Criteria for each task before starting. I use a checklist to verify each requirement, run local tests, and ensure code style and documentation match team guidelines.",
+      "example": "Creating a checklist of validation rules, error handling, and performance metrics before marking a registration form as complete."
+    },
+    {
+      "id": "tkm7",
+      "difficulty": "Intermediate",
+      "question": "How do you manage your workload when team members keep adding minor tasks to your plate throughout the day?",
+      "answer": "I acknowledge the requests but request that they be logged in our tracking system. I evaluate if they are quick fixes or if they need to be scheduled for the next sprint, preventing ad-hoc distractions from derailing my core work.",
+      "example": "Asking a teammate to file a ticket for a CSS tweak so I can address it during my designated cleanup hour instead of stopping my active debugging."
+    },
+    {
+      "id": "tkm8",
+      "difficulty": "Basic",
+      "question": "How do you handle a highly repetitive, boring task that is critical for the project but takes up a lot of time?",
+      "answer": "I block out a specific quiet hour to focus entirely on it. If possible, I look for ways to write a script or use tools to automate portions of the task, turning it into a learning experience.",
+      "example": "Writing a Python script to extract and format 200 CSV files instead of copy-pasting the data manually into the database."
+    },
+    {
+      "id": "tkm9",
+      "difficulty": "Advanced",
+      "question": "How do you handle a situation where a client demands a task be done in a highly non-standard, inefficient way?",
+      "answer": "I seek to understand their underlying goal. I explain the performance, maintenance, and security trade-offs of their proposed method and present a standard, efficient alternative that achieves the exact same goal.",
+      "example": "When a client asked to store passwords in a custom plain-text text file, I explained the security risks and implemented a standard hashed database solution instead."
+    },
+    {
+      "id": "tkm10",
+      "difficulty": "Advanced",
+      "question": "How do you ensure that knowledge is shared so that a project doesn't fail if you are suddenly unavailable?",
+      "answer": "I write clear, up-to-date documentation for all setup steps, architectural decisions, and APIs. I share updates in team channels and cross-train team members on key parts of the system.",
+      "example": "Writing a detailed README.md with configuration commands and recording a 5-minute video walkthrough of the backend routing logic."
+    }
+  ],
+  "presentation": [
+    {
+      "id": "pr1",
+      "difficulty": "Basic",
+      "question": "How do you prepare for a presentation to ensure you deliver the message clearly?",
+      "answer": "I structure the talk with a clear introduction, 3 main points, and a summary. I practice multiple times, focus on keeping my slides simple, and ensure the content directly addresses the audience's interests.",
+      "example": "Rehearsing my project demo out loud to check if the transitions between slides feel natural and fit within the 10-minute limit."
+    },
+    {
+      "id": "pr2",
+      "difficulty": "Intermediate",
+      "question": "What is your main weakness when presenting, and how are you working to overcome it?",
+      "answer": "My weakness is speaking too quickly when I get nervous or excited. I manage this by placing reminder marks in my presentation notes to pause, take a breath, and consciously speak at a slower, steadier pace.",
+      "example": "Writing \"[PAUSE & BREATHE]\" at the top of each slide note to prompt myself to slow down during a project demo."
+    },
+    {
+      "id": "pr3",
+      "difficulty": "Advanced",
+      "question": "How do you handle a situation where a technical demo fails completely in the middle of a live presentation?",
+      "answer": "I stay calm, acknowledge the error with humor or professionalism, and transition to a backup plan, such as showing pre-recorded video clips or screenshots of the working system.",
+      "example": "When the live API connection failed, I explained that it was a connection issue, opened a folder of pre-saved dashboard screenshots, and continued the presentation smoothly."
+    },
+    {
+      "id": "pr4",
+      "difficulty": "Intermediate",
+      "question": "How do you structure a presentation when speaking to non-technical stakeholders vs. senior developers?",
+      "answer": "For non-technical stakeholders, I focus on the business value, user impact, and overall outcomes using simple language. For developers, I focus on the system architecture, code choices, and performance metrics.",
+      "example": "Showing a stakeholder how the new form reduces checkout drop-offs by 20%, while showing developers the React components and database schema."
+    },
+    {
+      "id": "pr5",
+      "difficulty": "Intermediate",
+      "question": "How do you handle a difficult, unexpected question from the audience that you don't know the answer to?",
+      "answer": "I acknowledge the question as interesting, state honestly that I do not have the exact data at hand, and commit to researching and following up with them after the session.",
+      "example": "Saying: \"That is a great point regarding memory scale. I don't have the exact benchmark figures for 10k users on me, but I will check the logs and email you today.\""
+    },
+    {
+      "id": "pr6",
+      "difficulty": "Basic",
+      "question": "How do you keep your audience engaged during a long or potentially dry technical presentation?",
+      "answer": "I use visual diagrams instead of walls of text, share real-world stories or use cases, and ask interactive questions to keep the audience involved.",
+      "example": "Using a flow diagram to show how data travels through our app instead of listing 10 bullet points explaining the API endpoints."
+    },
+    {
+      "id": "pr7",
+      "difficulty": "Basic",
+      "question": "How do you design presentation slides that look clean, premium, and professional?",
+      "answer": "I use a simple grid layout, limit each slide to a single key message, keep text minimal (bullet points only), use high-contrast text, and select a consistent, harmonious color palette.",
+      "example": "Creating slides with a dark blue background, white text, and a single large diagram per page instead of cluttered blocks of text."
+    },
+    {
+      "id": "pr8",
+      "difficulty": "Advanced",
+      "question": "How do you handle an audience member who constantly interrupts your presentation with criticisms or side comments?",
+      "answer": "I listen politely, acknowledge their point briefly to make them feel heard, and suggest we discuss it in detail during the Q&A or offline so we can stay on schedule.",
+      "example": "Saying: \"Thank you for that feedback on the library choice. Let's park that topic for the discussion session at the end so we can cover the rest of the demo.\""
+    },
+    {
+      "id": "pr9",
+      "difficulty": "Advanced",
+      "question": "What do you do if you are asked to give a presentation on a project that you did not work on and know very little about?",
+      "answer": "I meet with the core team to understand the main goals, technical choices, and outcomes. I structure the presentation to cover these high-level points and arrange for a team member to be present to answer deep technical questions.",
+      "example": "Briefing myself on a teammate's database project by reading their readme, drafting a 5-slide summary, and asking them to join the Zoom call for support."
+    },
+    {
+      "id": "pr10",
+      "difficulty": "Intermediate",
+      "question": "How do you handle presenting to an audience that shows absolutely no reaction, questions, or engagement?",
+      "answer": "I maintain my energy and professional tone, stick to my prepared flow, and try asking direct, open-ended questions. I don't let their quietness make me nervous, as they might just be listening intently.",
+      "example": "Asking the client team: \"Which of these three features do you see your team using most often?\" to prompt some initial feedback."
     }
   ]
 };
