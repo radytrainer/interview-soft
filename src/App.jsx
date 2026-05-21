@@ -3,7 +3,7 @@ import {
   Search, Moon, Sun, Download, RefreshCw, ChevronDown, ChevronRight, 
   Menu, X, Star, FileText, CheckCircle, BrainCircuit, Bug, 
   Layers, Globe, Shield, UserPlus, Trash2, Users, Edit3, Award, FileSpreadsheet,
-  Palette, CheckSquare, Briefcase, ClipboardList, Presentation
+  Palette, CheckSquare, Briefcase, ClipboardList, Presentation, UserCheck
 } from 'lucide-react';
 
 function useLocalStorage(key, initialValue) {
@@ -47,6 +47,7 @@ const CATEGORIES = [
   { id: 'project_management', name: 'Project Management', icon: <Briefcase className="w-5 h-5" /> },
   { id: 'task_management', name: 'Task Management', icon: <ClipboardList className="w-5 h-5" /> },
   { id: 'presentation', name: 'Presentation', icon: <Presentation className="w-5 h-5" /> },
+  { id: 'hr_interview', name: 'HR Interview', icon: <UserCheck className="w-5 h-5" /> },
 ];
 
 const QUESTION_BANK = {
@@ -1583,6 +1584,183 @@ const QUESTION_BANK = {
       "question": "How do you handle presenting to an audience that shows absolutely no reaction, questions, or engagement?",
       "answer": "I maintain my energy and professional tone, stick to my prepared flow, and try asking direct, open-ended questions. I don't let their quietness make me nervous, as they might just be listening intently.",
       "example": "Asking the client team: \"Which of these three features do you see your team using most often?\" to prompt some initial feedback."
+    }
+  ],
+  "hr_interview": [
+    {
+      "id": "hr1",
+      "difficulty": "Basic",
+      "question": "Tell me about yourself.",
+      "answer": "I give a short summary of my background, current studies, key strengths, and the kind of opportunity I am looking for. A strong answer is clear, relevant, and focused on why my background fits the role instead of listing my entire life story.",
+      "example": "I am a final-year IT student with strong interest in web development and teamwork. Through class projects and self-study, I have built practical skills in problem solving, communication, and presenting ideas clearly."
+    },
+    {
+      "id": "hr2",
+      "difficulty": "Intermediate",
+      "question": "Why should we hire you?",
+      "answer": "I connect my strengths to the role by showing that I can learn quickly, work well with others, and take responsibility for results. The best answer is confident but honest, focusing on what value I can bring as a student or junior candidate.",
+      "example": "You should hire me because I am motivated to learn, I communicate well in a team, and I take ownership of my work. Even when I do not know something yet, I learn fast and stay committed until the task is completed well."
+    },
+    {
+      "id": "hr3",
+      "difficulty": "Basic",
+      "question": "Why do you want to join this company or internship program?",
+      "answer": "I explain what attracts me about the company, the learning opportunity, and how it matches my goals. A good answer shows that I researched the organization and that I am interested for meaningful reasons, not only because I need any job.",
+      "example": "I want to join your internship program because your team works on real products, and I believe that environment will help me grow my technical and professional skills while contributing positively to the team."
+    },
+    {
+      "id": "hr4",
+      "difficulty": "Intermediate",
+      "question": "What are your strengths and weaknesses?",
+      "answer": "I mention real strengths that fit the role and describe one honest weakness together with the steps I am taking to improve it. A strong answer shows self-awareness, maturity, and growth rather than pretending to be perfect.",
+      "example": "One of my strengths is staying organized under pressure, especially in team assignments. One weakness is that I can be too quiet at the start of a new group, so I push myself to speak up earlier and contribute ideas more actively."
+    },
+    {
+      "id": "hr5",
+      "difficulty": "Intermediate",
+      "question": "Where do you see yourself in the next three to five years?",
+      "answer": "I describe a realistic goal that shows growth, commitment, and willingness to keep learning. The answer should balance ambition with humility and connect my future plans to the field I am applying for.",
+      "example": "In the next three to five years, I hope to become a reliable professional in my field, with stronger technical skills, more real project experience, and the ability to take on bigger responsibilities in a team."
+    },
+    {
+      "id": "hr6",
+      "difficulty": "Intermediate",
+      "question": "What is your salary expectation?",
+      "answer": "I answer professionally by showing flexibility, awareness of the role level, and interest in the overall opportunity, not only the number. If I am a student or junior candidate, it is usually best to give a reasonable range and mention that I am open to discussion based on responsibilities and growth opportunities.",
+      "example": "Based on my current level and the responsibilities of the role, I am looking for a fair entry-level salary range, but I am open to discussion depending on the full package and learning opportunity."
+    },
+    {
+      "id": "hr7",
+      "difficulty": "Basic",
+      "question": "When can you start?",
+      "answer": "I should answer clearly and honestly based on my actual availability. A good answer shows that I respect both my current commitments and the employer's planning needs.",
+      "example": "I can start immediately after my final exams next month, or earlier on a part-time basis if needed."
+    },
+    {
+      "id": "hr8",
+      "difficulty": "Intermediate",
+      "question": "What is your biggest achievement so far?",
+      "answer": "I choose an achievement that shows effort, growth, and relevant skills rather than just the result. A strong answer explains the situation, what I did, and what I learned from it.",
+      "example": "My biggest achievement was leading a university team project from planning to final presentation and helping the group finish on time with a strong result."
+    },
+    {
+      "id": "hr9",
+      "difficulty": "Intermediate",
+      "question": "How do you handle stress or pressure?",
+      "answer": "I explain that I stay calm by prioritizing tasks, breaking work into smaller steps, and communicating early if something becomes risky. Interviewers want to hear that I can stay effective under pressure, not that I never feel stress.",
+      "example": "When several deadlines happen in the same week, I make a schedule, handle the most urgent work first, and avoid waiting until the last moment."
+    },
+    {
+      "id": "hr10",
+      "difficulty": "Basic",
+      "question": "Do you prefer working alone or in a team?",
+      "answer": "The best answer is balanced: I can work independently when needed, but I also value teamwork because many strong results come from collaboration. This shows flexibility rather than an extreme preference.",
+      "example": "I am comfortable working alone on focused tasks, but I also enjoy teamwork because it allows people to share ideas, support each other, and produce stronger results."
+    },
+    {
+      "id": "hr11",
+      "difficulty": "Intermediate",
+      "question": "Why are you leaving your current internship, part-time role, or student project responsibility?",
+      "answer": "I keep the answer positive and forward-looking. I focus on growth, learning, and the new opportunity rather than criticizing past people or experiences.",
+      "example": "I appreciated my previous experience, but I am now looking for a role where I can take on more responsibility, grow faster, and apply my skills in a larger environment."
+    },
+    {
+      "id": "hr12",
+      "difficulty": "Basic",
+      "question": "Do you have any questions for us?",
+      "answer": "I should always ask thoughtful questions because it shows interest, preparation, and professionalism. Good questions usually focus on the role, team, training, expectations, or growth opportunities.",
+      "example": "I would ask what success looks like in the first three months, what kind of training is available for junior team members, and how the team usually works together."
+    },
+    {
+      "id": "hr13",
+      "difficulty": "Intermediate",
+      "question": "What would you do if you were given a task with a very short deadline and you were not sure how to complete it?",
+      "answer": "I would first clarify the expected outcome, then break the task into smaller steps and start with the most important part. If I still had a blocker, I would ask for guidance early rather than waiting too long and risking missing the deadline.",
+      "example": "If I were asked to prepare a report by the end of the day, I would confirm the format, gather the most critical information first, and update my supervisor quickly if I needed support."
+    },
+    {
+      "id": "hr14",
+      "difficulty": "Intermediate",
+      "question": "How would you handle a situation where a teammate was not doing their part in a group assignment or workplace task?",
+      "answer": "I would speak to the teammate respectfully first and try to understand whether they were confused, overloaded, or facing another issue. If the problem continued, I would raise it professionally with the team lead or lecturer and focus on finding a fair solution instead of creating conflict.",
+      "example": "If a teammate missed two deadlines, I would check in privately, offer help where possible, and then update the group if the delay started affecting the final result."
+    },
+    {
+      "id": "hr15",
+      "difficulty": "Intermediate",
+      "question": "What would you do if you made a mistake that affected a customer, teacher, or manager?",
+      "answer": "I would admit the mistake quickly, explain the situation honestly, and focus on correcting it as fast as possible. A strong response shows accountability, calm communication, and a clear plan to avoid repeating the same mistake.",
+      "example": "If I sent the wrong version of a document, I would apologize, send the corrected file immediately, and double-check future submissions more carefully."
+    },
+    {
+      "id": "hr16",
+      "difficulty": "Advanced",
+      "question": "How would you respond if your manager gave you feedback that felt unfair or too harsh?",
+      "answer": "I would stay professional, listen carefully, and avoid reacting emotionally in the moment. Then I would ask respectful follow-up questions to understand the feedback better and decide what I could improve, even if I did not fully agree with every point.",
+      "example": "If a manager said my communication was weak, I would ask for a specific example so I could understand the gap and work on improving it."
+    },
+    {
+      "id": "hr17",
+      "difficulty": "Advanced",
+      "question": "What would you do if you had to choose between finishing your own task and helping a teammate who was struggling before an important deadline?",
+      "answer": "I would quickly assess both priorities and look for a balanced way to protect the overall team result. If my own task was under control, I would help the teammate; if both tasks were at risk, I would communicate early and help the team decide the best priority together.",
+      "example": "If I had already finished most of my slides, I would spend some time helping my teammate prepare their part so the whole presentation would be stronger."
+    },
+    {
+      "id": "hr18",
+      "difficulty": "Advanced",
+      "question": "What would you do if you disagreed with your manager's decision but were still expected to follow it?",
+      "answer": "I would respectfully share my concern with clear reasons and, if helpful, offer an alternative. If the final decision stayed the same, I would support it professionally and do my best to execute it well unless it involved something unethical or unsafe.",
+      "example": "If I believed a deadline was unrealistic, I would explain the risk, suggest a phased plan, and then work with the final direction once the decision was made."
+    },
+    {
+      "id": "hr19",
+      "difficulty": "Advanced",
+      "question": "How would you handle a situation where you were blamed for a mistake that was not fully your fault?",
+      "answer": "I would stay calm, avoid reacting defensively, and focus on clarifying the facts professionally. A strong response protects relationships while still taking ownership for my part and helping the team move toward a solution.",
+      "example": "If a project issue came from both unclear instructions and my own assumption, I would explain my part honestly, clarify what happened, and suggest how to avoid the same confusion next time."
+    },
+    {
+      "id": "hr20",
+      "difficulty": "Advanced",
+      "question": "What would you do if you noticed a coworker acting unethically but they were a close friend?",
+      "answer": "I would not ignore it just because of the friendship. I would address it seriously and professionally, first by encouraging them to correct the issue if appropriate, and if necessary I would escalate it through the right channel because integrity matters more than personal comfort.",
+      "example": "If a friend copied someone else's work into a client document, I would tell them it needed to be corrected immediately and, if they refused, I would report it through the proper process."
+    },
+    {
+      "id": "hr21",
+      "difficulty": "Advanced",
+      "question": "How would you respond if an interviewer challenged your answer and made you feel uncomfortable on purpose?",
+      "answer": "I would stay composed, listen carefully, and respond with professionalism rather than emotion. Sometimes interviewers test how candidates handle pressure, so the goal is to show maturity, self-control, and confidence under stress.",
+      "example": "If an interviewer said my answer sounded weak, I would thank them for the challenge, clarify my point more strongly, and support it with a real example."
+    },
+    {
+      "id": "hr22",
+      "difficulty": "Advanced",
+      "question": "What would you do if you were asked to do something outside your job scope just before the end of the day?",
+      "answer": "I would first understand the urgency and impact of the request, then assess my current priorities. If the task was important, I would help where possible or negotiate a practical plan, instead of saying yes blindly or refusing without discussion.",
+      "example": "If I was about to leave but was asked to support an urgent client issue, I would check the deadline, update my manager, and help with the most critical part if it was truly time-sensitive."
+    },
+    {
+      "id": "hr23",
+      "difficulty": "Basic",
+      "question": "What do you know about our company?",
+      "answer": "I should show that I researched the company's background, services, values, and reputation before the interview. A strong answer proves genuine interest and preparation rather than giving a vague compliment.",
+      "example": "From my research, I understand that your company focuses on delivering practical digital solutions, values teamwork and professionalism, and is known for giving young talent opportunities to grow."
+    },
+    {
+      "id": "hr24",
+      "difficulty": "Intermediate",
+      "question": "Which part of our company profile or mission stands out to you most, and why?",
+      "answer": "I choose one specific part of the company's mission, culture, or service and connect it to my own values or career goals. This makes the answer personal and believable instead of sounding copied from the website.",
+      "example": "What stands out most to me is your focus on learning and continuous improvement, because I want to join an environment where junior team members are encouraged to grow through real work and feedback."
+    },
+    {
+      "id": "hr25",
+      "difficulty": "Intermediate",
+      "question": "How would you represent our company well if you joined us?",
+      "answer": "I would represent the company through professionalism, reliability, respectful communication, and a willingness to learn. A strong answer shows that I understand I would be reflecting the company's standards in how I work with clients, teammates, and the public.",
+      "example": "If I joined the company, I would try to represent it well by being dependable, speaking respectfully to clients, protecting the company's reputation, and consistently doing quality work."
     }
   ]
 };
