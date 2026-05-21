@@ -68,9 +68,9 @@ const QUESTION_BANK = {
     {
       "id": "f3",
       "difficulty": "Basic",
-      "question": "How do you make sure your written communication is professional?",
-      "answer": "I keep the message polite, direct, and well-structured. I review the spelling, tone, and key details before sending it. Professional writing should make it easy for the reader to know what happened and what is needed next.",
-      "example": "Before emailing a teacher about a missed deadline, I explain the situation clearly, take responsibility, and ask for guidance in a respectful tone."
+      "question": "How do you ensure your communication is respectful when messaging a senior manager or client?",
+      "answer": "I use polite greetings, structure the message clearly, and maintain a respectful tone that honors their seniority. In Cambodia, showing respect in hierarchy is key, so I state the issue clearly but humbly and offer solution options.",
+      "example": "When messaging a senior director, I begin with a polite greeting, explain the project status briefly, and ask for their advice rather than demanding immediate action."
     },
     {
       "id": "f4",
@@ -145,9 +145,9 @@ const QUESTION_BANK = {
     {
       "id": "f14",
       "difficulty": "Advanced",
-      "question": "How do you handle a situation where you have to give negative feedback to someone who is highly sensitive?",
-      "answer": "I use the \"feedback sandwich\" or focus entirely on the behavior/work rather than the person. I highlight their strengths first, explain the issue constructively, and offer to brainstorm solutions together.",
-      "example": "\"Your research is excellent, but the formatting of the slides makes it hard to read. Let's simplify the template together to make your work shine.\""
+      "question": "How do you give constructive feedback to a colleague while respecting their feelings and preserving group harmony?",
+      "answer": "I give feedback privately rather than in public to prevent them from losing face. I focus on the work rather than the person, highlight their strengths first, explain the issue gently, and offer to help them resolve it.",
+      "example": "Speaking to a teammate privately after a meeting to show how a styling bug can be fixed, rather than pointing it out in front of the entire group."
     },
     {
       "id": "f15",
@@ -417,9 +417,9 @@ const QUESTION_BANK = {
     {
       "id": "tw7",
       "difficulty": "Intermediate",
-      "question": "How do you handle a team dynamic where members have highly eccentric, strange, or difficult working styles?",
-      "answer": "I respect individual differences and focus on clear, structured communication. I agree on common formats for updates and deliverables so everyone can work in their own way while meeting team standards.",
-      "example": "Letting a quiet classmate submit their updates in writing via Slack while others discuss them over voice calls."
+      "question": "How do you handle a team dynamic where members have different levels of English proficiency or different cultural backgrounds (e.g. local Khmer teammates and foreign managers)?",
+      "answer": "I focus on patience and clear, simple communication. I avoid using complex slang, speak clearly, and follow up verbal agreements with written summaries. I respect local workplace norms and build relationships to keep the team aligned.",
+      "example": "Writing key project milestones on Slack in plain English after meetings so both international expats and local developers are on the same page."
     },
     {
       "id": "tw8",
@@ -547,7 +547,7 @@ const QUESTION_BANK = {
       "difficulty": "Intermediate",
       "question": "How do you handle a situation where a client changes the project requirements just days before the final deadline?",
       "answer": "I assess what can realistically be completed, present the options to the client (e.g., delay the deadline, or launch the original version and add the changes in a phase 2), and let them decide.",
-      "example": "Explaining that we can add the payment gateway by next week, or launch on time with a simple bank transfer option."
+      "example": "Explaining that we can add the complex credit card gateway by next week, or launch on time with an ABA KHQR / Bakong payment option."
     },
     {
       "id": "ad11",
@@ -566,9 +566,9 @@ const QUESTION_BANK = {
     {
       "id": "ad13",
       "difficulty": "Intermediate",
-      "question": "How do you handle it when your teacher or manager gives you feedback that completely contradicts their previous advice?",
-      "answer": "I don't point out the contradiction defensively. I politely ask for clarification to ensure I align with their current vision, recognizing that goals can change.",
-      "example": "Saying: \"I want to make sure I get this right. Previously we focused on adding features, but now we are prioritizing speed. Should I pause feature work?\""
+      "question": "How do you handle it when your manager gives you feedback that contradicts their previous advice?",
+      "answer": "I avoid pointing out the contradiction directly or defensively to ensure respect and group harmony. Instead, I ask clarifying questions to align with their current expectations, acknowledging that project requirements or business needs may have shifted.",
+      "example": "Saying: \"To make sure I deliver exactly what is needed for this client report, should we focus more on the detailed technical data or the high-level business summary?\""
     },
     {
       "id": "ad14",
@@ -780,9 +780,9 @@ const QUESTION_BANK = {
     {
       "id": "tm13",
       "difficulty": "Intermediate",
-      "question": "What is your approach to planning your week to ensure you have a good balance of work and rest?",
-      "answer": "I plan my week on Sunday. I block out times for classes, project work, and study, but I also schedule rest, exercise, and hobbies to avoid burnout.",
-      "example": "Scheduling no project work after 7 PM each day to ensure I get enough rest to stay focused the next morning."
+      "question": "How do you manage your project deadlines when major national holidays (like Pchum Ben or Khmer New Year) are approaching?",
+      "answer": "I plan ahead by finalizing critical deliverables at least one week before the holiday begins. I communicate early with the team and clients to set expectations, ensuring all urgent work is covered so everyone can enjoy family time without work disruptions.",
+      "example": "Accelerating code testing and deploying the stable API version a week before Pchum Ben, so the client database runs smoothly during the holiday."
     },
     {
       "id": "tm14",
@@ -866,9 +866,9 @@ const QUESTION_BANK = {
     {
       "id": "ip10",
       "difficulty": "Intermediate",
-      "question": "How do you build rapport with a client or team member from a completely different cultural background?",
-      "answer": "I stay open-minded, respect cultural differences, avoid slang, and listen carefully. I show genuine interest in their perspective and adapt my style to be respectful.",
-      "example": "Learning basic greetings in a client's language and checking their national holidays to avoid scheduling critical meetings on those days."
+      "question": "How do you build rapport with a client or team member from a different cultural background (e.g., a foreign partner or expat manager)?",
+      "answer": "I respect cultural differences, avoid localized slang, and listen carefully. I show interest in their perspective, use professional business greetings, and learn about their cultural communication style to prevent misunderstandings.",
+      "example": "Welcoming an international expat manager with traditional Cambodian politeness, using clear English, and explaining local office customs to help them settle in."
     },
     {
       "id": "ip11",
@@ -952,9 +952,9 @@ const QUESTION_BANK = {
     {
       "id": "in7",
       "difficulty": "Advanced",
-      "question": "How do you respond if a supervisor or client asks you to do something that feels ethically grey or strange?",
-      "answer": "I ask for clarification to ensure I didn't misunderstand. If it is indeed unethical, I explain my concerns regarding compliance, safety, or legal standards, and suggest an ethical alternative.",
-      "example": "Refusing to write code that hides unsubscribe buttons, and suggesting a clean, compliant user settings page instead."
+      "question": "How do you respond if a supervisor or client asks you to bypass standard data security or privacy guidelines to speed up a project launch?",
+      "answer": "I ask for clarification to make sure I did not misunderstand. I then politely explain the compliance and reputational risks (such as exposing customer data or violating local laws) and suggest a secure, standard way to launch.",
+      "example": "Refusing to export customer phone numbers and transaction histories to a public Google Sheet, and proposing a secure, role-based admin dashboard instead."
     },
     {
       "id": "in8",
