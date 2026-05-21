@@ -2000,7 +2000,7 @@ export default function App() {
       <div className="md:hidden flex items-center justify-between bg-slate-900 text-white p-4 sticky top-0 z-20 shadow-md">
         <div className="flex items-center gap-2 font-bold text-teal-400">
           <BrainCircuit className="w-6 h-6 animate-pulse" /> 
-          <span className="tracking-wide">TechTrainer Pro</span>
+          <span className="tracking-wide">PNCSoftSkill</span>
         </div>
         <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="p-2 bg-slate-800 rounded-lg text-slate-200 hover:text-white">
           {isSidebarOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -2015,7 +2015,7 @@ export default function App() {
       <div className={`fixed inset-y-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:relative md:translate-x-0 w-72 bg-slate-900 text-slate-100 flex flex-col z-40 transition-transform duration-300 ease-in-out`}>
         <div className="p-6 hidden md:flex items-center gap-3 font-extrabold text-xl text-teal-400 border-b border-slate-800">
           <BrainCircuit className="w-8 h-8" />
-          <span className="tracking-tight">TechTrainer Pro</span>
+          <span className="tracking-tight">PNCSoftSkill</span>
         </div>
 
         {/* Dynamic Candidate Selector Widget */}
